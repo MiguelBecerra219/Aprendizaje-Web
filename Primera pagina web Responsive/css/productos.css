@@ -1,0 +1,106 @@
+*{
+    background-color: var(--color-fondos);
+}
+
+.titulo-productos{
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px 0px 30px 0px;
+}
+
+.search-input{
+    float: left;
+    margin: 10px;
+    border: none;
+    border-bottom:1px solid var(--color-primario-dark) ;
+    outline: 0;
+}
+
+.search-input:focus{
+    box-shadow: none;
+}
+
+.seleccion-orden{
+    float: right;
+    margin: 10px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.caja-pruducto{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.caja-pruducto img{
+    transition: all 0.3s;
+}
+
+.caja-pruducto:hover{
+    text-decoration: none;
+}
+
+.caja-pruducto:hover img{
+    transform: scale(1.05);
+}
+
+.caja-pruducto h3{
+    font-weight: normal;
+    font-size: 14px;
+    margin: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* compativilidad con opera 10 hace lo mismoq ue la linea superior */
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.caja-pruducto  .offer{
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.caja-pruducto  .offer.hidden{
+    visibility: hidden;
+}
+
+.caja-pruducto .precio{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.caja-pruducto strong del{
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.paginacion{
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+}
+
+.paginacion li{
+    display: inline-block;
+}
+
+.paginacion li a{
+    color: black;
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.paginacion li a.actived{
+    border: 1px solid black;
+}
+
+.paginacion li a:hover{
+    color: var(--color-primario);
+}

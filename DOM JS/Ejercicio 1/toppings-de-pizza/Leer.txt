@@ -1,0 +1,1 @@
+Este es un proyecto con el que se busca aprender los fundamentos del DOM

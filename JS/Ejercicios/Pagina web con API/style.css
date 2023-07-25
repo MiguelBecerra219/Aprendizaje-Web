@@ -1,0 +1,15 @@
+.contenedor{
+    margin: auto;
+    width: 50em;
+    background-color: aqua;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1em;
+}
+
+li{
+    display: block;
+}

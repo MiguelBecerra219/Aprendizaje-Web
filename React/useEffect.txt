@@ -1,0 +1,10 @@
+import { useEffect } from react;
+
+nos sirve para ejecutar codigo cadavez que alguna de las dependencias que le indiquemos cambien, o tamben un avez al cargar la 
+pagina web
+
+Recive dos parametros el primero es una funcion en la que enviaremos el codigo que queremos se ejecute
+el segundo es una lista de dependencias donde podemos pasar los elementos que al ser actualizados llamaran a la funcion por
+si no enviamos este parametro se ejecutara cada vez que el componenete se reenderice y si lo enviamos con un arrray basio[]
+se ejecutara la primera vez nada mas
+useEffect( () => {} , [] );

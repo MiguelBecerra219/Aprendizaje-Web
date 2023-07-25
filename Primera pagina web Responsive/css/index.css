@@ -1,0 +1,383 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+/* tamaño de letra y tipo de letra de los diferentes H y los parrafos */
+h1{font-size: 3.2em;}
+
+h2{font-size: 2.6em;}
+
+h3{font-size: 2em;}
+
+h4{font-size: 2.5em;}
+
+p{font-size: 1.2em;}
+
+/* quitamos el estilo de las listas y le damos taño de letra a sus elementos */
+ul{list-style: none;}
+
+li{font-size: 1.2em;}
+
+button{
+    /* Tamaño de la letra del boton */
+    font-size: 1.5em;
+    /* tipo de letra principal y de respaldo del boton */
+    /* font-family:'Playfair Display', serif;  */
+    /*Ponemos la letra en engrita  */
+    font-weight: bold;
+    /* asignamos un pading, "todo el espacio libre de letra pero antes del border */
+    padding: 10px 40px;
+    /* asignamos el tamaño del border y el border radius que es lo redondeado del boton */
+    border-radius: 10px;
+    border: 1.5px solid rgba(0,0,0,0.5);
+    /* asignamos el color del borde */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    /* asignamos el color del boton */
+    background-color:rgb(55, 100, 182);
+    /* Color para el texto del boton */
+    color: white;
+}
+
+button:hover{
+    /* este es el color del boton cuando le pasan el color por encima */
+    background-color: rgb(47, 81, 145);
+}
+
+.contenedor{
+    /* asignamos el maximo de ancho que tendra */
+    max-width: 1450px;
+    /* dejamos el margin en automatico */
+    margin: auto;
+}
+
+.color-acento{color: rgb(55, 100, 182)}
+
+header{
+    /* le asignamos a el geader un color blanco un poco oscurecido */
+    background-color: rgb(220,220,220);
+}
+
+header .logo{
+    /* quitamos el margin para que se pegue a la parte superior de la pagina */
+    margin: 0;
+    /* pading arriba y abajo y a los costados */
+    padding: 25px 60px;
+    /* grueso de la letra, en este caso negrita */
+    font-weight: bold;
+    /* color de la letra */
+    color: rgb(57, 103, 189);
+    /* tamaño de la letra */
+    font-size: 2.5em;
+}
+
+header .contenedor{
+    /* El display flex permite agrupar cada uno de las diviciones del contenedor en diferentes cajas, para despues ordenarlas de manera vertical o horizontal  */
+    display: flex;
+    /*Direccion en la que se ordenaran los elementos  */
+    flex-direction: column;
+    /* Centramos los items del conenedor de header */
+    align-items: center;
+}
+
+header nav{
+    /* Agrupamos los elementos en cajas indiciduales */
+    display: flex;
+    /* ordenamos en columnas las cajas */
+    flex-direction:column;
+    /* centramos el texto */
+    text-align: center;
+    /* separamos con un padding, asi logramos tener espacio entre los elementos */
+    padding-bottom: 25px;
+}
+/* cambiamos el estilo de los links que tenemos dentro de la nav de header */
+header a{
+    /*Añadiendo este pading podemos, separar los objetos entre si, con el primer valor de manera vertical con el segundo valor de manera horizontal */
+    padding: 5px 12px;
+    /* Con esto quitamos el subrayado feo */
+    text-decoration: none;
+    /* ponemos el texto en negrita */
+    font-weight: bold;
+    /* Color para el texto */
+    color: black;
+
+    font-size: 1.2em;     
+}
+/* damos un color a los links cuando tienen el cursor encima */
+header a:hover{
+    color:rgb(57, 103, 189);
+}
+/* Personalizamos en "baner" que tendra una imagen de fondo con un texto y un boton encima  */
+#baner{
+    /* De nuevo ordenamos los elementos en cajas y los ponemos en vertical */
+    display: flex;
+    flex-direction: column;
+    /* hacemos que el boton ocupe un epacio solo en el sentro y no toda la pantalla */
+    align-items: center;
+    /* centramos los items en la mitad de todo el recuadro */
+    justify-content: center;
+    /* sentramos el texto como tal */
+    text-align: center;
+    /* hacemos que el recuadro se ajuste al largo de la pagina, para que se vea grande como lo queremos */
+    height: 90vh;
+    /* Ponemos el texto en blanco para que contraste con la imagen de fond */
+    color: white;
+    /* Añadimos la imagen de fondo, pero añadimos un gradiante para oscureserla y que quede mejor  */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Media/Sabanas-fondo.jpg");
+    /* Con esta propiedad hacemos que la imagen se muestre una sola vez */
+    background-repeat: no-repeat;
+    /* Con la propiedad cover hacemos que la imagen se ajuste a la pagina manteniendo sus proporciones  */
+    background-size: cover;
+    /* Hacemos que la posicion inicial de la imagen sea el centro  */
+    background-position: center center;
+}
+
+/* Le damos color de fondo a esta seccion */
+#somosTapimotosJR{
+    background-color: rgb(220,220,220)
+}
+/* centramos el texto en el contenedor y le damos pading para que se separe un poco de las otras dos secciones */
+#somosTapimotosJR .contenedor{
+    /* Centramos el texto */
+    text-align: center;
+    /* Damos espacio con las demas aprtes de la pagina */
+    padding: 200px 12px;
+}
+/* Estilizamos la seccion de los productos  */
+#nuestros-productos{
+    /* Quitamos el margen que viene por defecto */
+    margin: 0;
+    /* Le damos un color de fondo  */
+    background-color: rgb(30,30,30);
+    /* Definimos el color de la letra */
+    color: white;
+    /* centramos el texto */
+    text-align: center;
+}
+/* Estilizamos el contenedor de la seccion  */
+#nuestros-productos .contenedor{
+    /* Separamos el contenido del borde del contenedor */
+    padding: 100px 12px;
+}
+/* estilizamos el parrafo */
+#nuestros-productos p{
+    /* Le quitamos el display */
+    display: none;
+}
+/* Estilizaños el titulo3 */
+#nuestros-productos h3{
+    /* Letra en negrita */
+    font-weight: bold;
+    /* Quitamos el margin superior */
+    margin-top: 0;
+    /* Definimos el tamaño de la fuente */
+    font-size: 3.5em;
+}
+/* Estilizamos las cartas que contendran las imagenes y el texto */
+#nuestros-productos .carta{
+    /* Redimencionamos las imagenes para que cubran bien  la caja y se vean mejor */
+    background-size: cover;
+    /* Definimos la posicion inicial de la imagen como en el centro para ver toda la mitad de la imagen en la caja */
+    background-position: center center;
+    /* Damos espacio entre el contenido y el borde de la carta  */
+    padding: 50px;
+    /* Separamos las cartas entre si */
+    margin: 15px;
+    /* Redondeamos los bordes */
+    border-radius: 20px;
+}
+/* Estilizamos la primera carta */
+.carta:first-child{
+    /* Fondo con difuminado */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Media/Sabanas-fondo.jpg");
+}
+/* Estilizamos la segunda carta */
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Media/repuestos.jpg");
+}
+/* Estilizamos la tercera carta */
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Media/luces.jpg");
+}
+/* Estilizamos las caracteristias */
+#caracteristicas{
+    /* Color de fondo */
+    background-color: rgb(220,220,220);
+}
+
+#caracteristicas .contenedor{
+    text-align: center;
+    align-items: center;
+    padding: 180px 12px;
+}
+
+#caracteristicas li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#comprar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color:white;
+    /* asi el cuadrado ocupara el 80% de la pantañña */
+    height: 80vh;
+}
+
+#comprar h2{
+    font-size: 9vw;
+}
+
+#comprar button{
+    padding: 22px 40px;
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(220,220,220)
+
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+/* cuando la pantalla supere los 720 pixeles se aplicaran estos estilos */
+@media(min-width: 900px){
+    header{
+        /* hacemos que el header se vea siempre en la pantalla  */
+        position: fixed;
+        width: 100%;
+    }
+
+    header .contenedor{
+        /* hacemos que las cajas se ordenen de manera horizontal */
+        flex-direction: row;
+        /* con esta propiedad separamos los elementos para que uno este en una esquina y el otro en la otra */
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-left: 15px;
+        padding-right: 15px ;
+    }
+
+    #baner h1{
+        font-size: 5em;
+    }
+
+    #somosTapimotosJR .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somosTapimotosJR .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #somosTapimotosJR h2{
+        margin-top: 0px;    
+    }
+
+    #somosTapimotosJR .contenedor-imagen{
+        background-image: url("/Media/Sabanas-fondo.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-productos .productos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p{
+        display: block;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-pruductos h4{
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta{
+        padding: 30px;
+    }
+
+    #caracteristicas{
+        background-image: url("/Media/luces.jpg");
+        background-size: 500px 400px ;
+        background-repeat: no-repeat;
+        background-position: calc(100vw - 450px) 120px;
+    }
+
+    #caracteristicas .contenedor{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #comprar h2{
+        font-size: 5em;
+    }
+
+    #comprar button{
+        font-size: 2.5em;
+    }
+    
+}
+
+@media (min-width: 1250px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+
+

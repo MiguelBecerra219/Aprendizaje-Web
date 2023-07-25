@@ -1,0 +1,17 @@
+[
+    {
+        "modelo": "Ford mugstan",
+        "Producion": 2010,
+        "millaje": 12000
+    },
+    {
+        "modelo": "Honda accord",
+        "Producion": 2021,
+        "millaje": 4560
+    },
+    {
+        "modelo": "Ford mugstan",
+        "Producion": 2016,
+        "millaje": 582000
+    }
+]

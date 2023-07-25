@@ -1,0 +1,58 @@
+1. npm create vite
+2. selecionar el nombre y despues las opciones vanilla y javascript
+3. cd nombreElegido para el proyecto
+4. npm install @vitejs/plugin-react -E
+5. npm install react react-dom -E
+6. crear un archivo js vite.config.js
+7. en el archivo: 
+import { defineConfig  } from "vite";
+import React from "@vitejs/plugin-react";
+
+export default defineConfig({
+    plugins: [React()]
+}); 
+8. En el archivo main.js cambiamos su extencion a main.jsx para que pueda manejar el codigo
+tambien cambiamos en el archivo html la importacion del script para que quede main.jsx
+y ademas borramos todo y ponemos: 
+import {createRoot} from 'react-dom/client';
+
+const root = createRoot(document.getElementById('app'));
+
+root.render(<h1>Hello, word</h1>);
+
+9. ejecutar npm run dev
+
+
+1. npm install standard -D
+2. en package.json incluir
+,
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+
+3. npx standard (buscar fallos)
+4. npx standard --fix (solucionar fallso
+
+
+INSTALACION DEL LINTER
+1. npm i -D eslint
+2. npx eslint --init 
+
+3. Buscar problemas en un archivo:
+npx eslint src/main.jsx
+
+4.corregir errores en el archivo
+npx eslint src/main.jsx --fix
+
+5.En el archivo .eslintrc.cjs añadimos debajo del env
+
+
+settings: {
+	react: {
+		version: 'detect'
+	}
+},
+
+
+
+

@@ -1,0 +1,92 @@
+.contenedor{
+    max-width: 1200px;
+    /* Con estos valores pordemos centrar el contenedor */
+    margin: 0 auto;
+}
+
+.fila::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="columna-"]{
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    .columna-xs-1{width: 8.33%;}
+    .columna-xs-2{width: 16.66%;}
+    .columna-xs-3{width: 25%;}
+    .columna-xs-4{width: 33.33%;}
+    .columna-xs-5{width: 41.66%;}
+    .columna-xs-6{width: 50%;}
+    .columna-xs-7{width: 58.33%;}
+    .columna-xs-8{width: 66.66%;}
+    .columna-xs-9{width: 75%;}
+    .columna-xs-10{width: 83.33%;}
+    .columna-xs-11{width: 91.66%;}
+    .columna-xs-12{width: 100%;}
+}
+
+@media only screen and (min-width: 600px){
+    .columna-s-1{width: 8.33%;}
+    .columna-s-2{width: 16.66%;}
+    .columna-s-3{width: 25%;}
+    .columna-s-4{width: 33.33%;}
+    .columna-s-5{width: 41.66%;}
+    .columna-s-6{width: 50%;}
+    .columna-s-7{width: 58.33%;}
+    .columna-s-8{width: 66.66%;}
+    .columna-s-9{width: 75%;}
+    .columna-s-10{width: 83.33%;}
+    .columna-s-11{width: 91.66%;}
+    .columna-s-12{width: 100%;}    
+}
+
+@media only screen and (min-width: 768px){
+    .columna-m-1{width: 8.33%;}
+    .columna-m-2{width: 16.66%;}
+    .columna-m-3{width: 25%;}
+    .columna-m-4{width: 33.33%;}
+    .columna-m-5{width: 41.66%;}
+    .columna-m-6{width: 50%;}
+    .columna-m-7{width: 58.33%;}
+    .columna-m-8{width: 66.66%;}
+    .columna-m-9{width: 75%;}
+    .columna-m-10{width: 83.33%;}
+    .columna-m-11{width: 91.66%;}
+    .columna-m-12{width: 100%;}
+}
+
+@media only screen and (min-width: 992px){
+    .columna-l-1{width: 8.33%;}
+    .columna-l-2{width: 16.66%;}
+    .columna-l-3{width: 25%;}
+    .columna-l-4{width: 33.33%;}
+    .columna-l-5{width: 41.66%;}
+    .columna-l-6{width: 50%;}
+    .columna-l-7{width: 58.33%;}
+    .columna-l-8{width: 66.66%;}
+    .columna-l-9{width: 75%;}
+    .columna-l-10{width: 83.33%;}
+    .columna-l-11{width: 91.66%;}
+    .columna-l-12{width: 100%;}    
+}
+
+@media only screen and (min-width: 1200px){
+    .columna-xl-1{width: 8.33%;}
+    .columna-xl-2{width: 16.66%;}
+    .columna-xl-3{width: 25%;}
+    .columna-xl-4{width: 33.33%;}
+    .columna-xl-5{width: 41.66%;}
+    .columna-xl-6{width: 50%;}
+    .columna-xl-7{width: 58.33%;}
+    .columna-xl-8{width: 66.66%;}
+    .columna-xl-9{width: 75%;}
+    .columna-xl-10{width: 83.33%;}
+    .columna-xl-11{width: 91.66%;}
+    .columna-xl-12{width: 100%;}    
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <b>Titulo del post: </b> <spam id="txtNombrePost"></spam> <br/>
+    <b>¿Esta completo el post? </b> <spam id="txtCompleto"></spam>
+
+    <h2>Con async y await</h2>
+    <b>Titulo del post: </b> <spam id="txtNombrePostAsync"></spam> <br/>
+    <b>¿Esta completo el post? </b> <spam id="txtCompletoAsync"></spam>
+
+
+
+
+    <!-- Vaños a llamar un api para usarla -->
+    <script>
+//Asi traemos el json que nos de un api la que especificamos con la direccion url
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+//Despues transformamos la respuesta a json ya que viene en texto
+.then(responce => responce.json())
+//Extraemos el json 
+.then(jsonCargado);
+
+/*Para enteder mejor la promesa, hare el proceso anterior a mano. 
+
+new Promise(resolver => {
+    let json = {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+    }   
+    resolver(json);
+
+})
+
+*/
+
+//El fetch es en si una promesa, esto quiere decir que es un proceso que puede tardar un tiempo pero esta la promesa de qie lo terminara y cuando lo termine ejecutara las funciones 
+
+function jsonCargado(json){
+    console.log(json);
+    document.getElementById("txtNombrePost").innerText = json.title;
+    
+    document.getElementById("txtCompleto").innerText = json.completed?"Esta completo":"Esta incompleto";
+}
+
+//Ahora se hara lo mismo pero usando el async y el await
+
+async function cargarJsonson(){
+    //el await nos permite guardar en el let la respuesta de la promesa y no solo la promesa, ya que con el await esperamos a que esta termine y ahi si realizamos el guardado
+    let respuesta = await fetch("https://jsonplaceholder.typicode.com/todos/2");
+    //Despues de la respuesta extraemos el json como tal
+    let json = await respuesta.json();
+    //Llamamos la funcion para verlo represe4tado en la pagina
+    jsonCargadoAsync(json);
+
+}
+
+cargarJsonson();
+
+function jsonCargadoAsync(json){
+    console.log(json);
+    document.getElementById("txtNombrePostAsync").innerText = json.title;
+    document.getElementById("txtCompletoAsync").innerText = json.completed ? "Esta completo" : "Esta incompleto" ;
+}
+
+    </script>
+
+
+
+</body>
+</html>

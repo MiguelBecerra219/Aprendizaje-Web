@@ -1,0 +1,1 @@
+Este proyecto fue usado para aprender a crear un proyecto con react y aprender las partes de un proyecto con este.

@@ -1,0 +1,40 @@
+Componente: una parte de la interfaz de usuarios, es reusable e independiente
+existen componenetes funcionales y de clase, actualmente se usan mas que todo los funcionales
+
+componente funcional: es una funcion de javaScript que devuelve un elemento de react, su nombre debe empezar con mayuscula,
+puede recibir valores si es necesario en react se llaman props
+
+props: argumentos que pueden recibir una funcion de react, estos solo pueden ser enviados de padre a hijo
+
+componente de clase: es una clase de ES6 esta retorna un elemento JSX, este debe extender React.Component, debe tener un
+metodo render para retornar un elemento JSX, puede revibir props si es necesario.
+
+Estado: representacion en javaScript del conjunto de propiedades de un componete y sus valores actuales, 
+
+Hooks:permiten agrearle algune stado a los componetes funcionaes o actualizarlo. Tambien permite trabajar con otros aspectos
+de react
+
+Event Lisenet: funcion que es ejecutada cuando ocurre un evento especifico igual que en DOM
+
+
+---------JSX------------
+
+Extencion de React para la sintaxis de javaScript nos petmite escribir en javaScript como se verab los componentes usando 
+una estructura similar a HTML, este nos ofrese estructuras mas faciles de visualizar y sus errores y advertencias son mas utiles
+
+class = className para JSX
+for = htmlFor (JSX)
+
+para los estilos usamos camelcase en ves de guiones
+background-image = backgroundImage (JSX)
+font-family = fontFamily
+
+
+
+elementos: son la unidad mas pequeña en react. definen lo que se ve en la pantalla
+
+elemento vs componente: los componenetes estan hechos de elementos, los elementos estan en minuscula, los componentes 
+empiezan con mayuscula
+
+
+

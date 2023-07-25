@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "vite": "^4.4.2"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standart/esLintrc.json"
+  }
+}

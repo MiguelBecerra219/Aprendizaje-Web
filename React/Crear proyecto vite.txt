@@ -1,0 +1,11 @@
+1. npm init
+2. mk dir nombredeldir
+3. cd nombredeldir
+4. npm create vite@latest
+	-nombre
+	-libreria
+	-lenguaje
+5. cd nombre
+6. npm install
+7. npm run dev
+

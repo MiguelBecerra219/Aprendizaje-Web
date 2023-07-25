@@ -1,0 +1,45 @@
+1. npm i -D eslint
+2. npx eslint --init 
+
+3. Buscar problemas en un archivo:
+npx eslint src/main.jsx
+
+4.corregir errores en el archivo
+npx eslint src/main.jsx --fix
+
+5.En el archivo .eslintrc.cjs añadimos debajo del env
+
+
+settings: {
+	react: {
+		version: 'detect'
+	}
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. instalacion del formateador
+npm i -D prettier
+
+6. ejecutar formateador
+npx prettier src/App.jsx
+npx prettier src/App.jsx --write (para sobre escribir el archivo)

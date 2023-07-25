@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .reloj{
+            size: 50%;
+            font-size: 3em;
+            font-family: monospace;
+            color: cornflowerblue;
+            font-weight: bold;
+            text-align: center;/*Centrar en medio del dif*/
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="reloj"></div>
+    
+    <script>
+
+        setInterval(() =>{
+            var reloj = document.getElementsByClassName("reloj")[0];
+            var tiempoActual = new Date();
+            var hora = tiempoActual.getHours();
+            if(hora<10){
+                hora=`0${hora}`
+            }
+            var minutos = tiempoActual.getMinutes();
+            if(minutos<10){
+                minutos=`0${minutos}`
+            }
+            var segundos = tiempoActual.getSeconds();
+            if(segundos<10){
+                segundos=`0${segundos}`
+            }
+            reloj.innerHTML = `${hora}:${minutos}:${segundos}`;
+        }, 1000)
+
+
+    </script>
+
+</body>
+</html>

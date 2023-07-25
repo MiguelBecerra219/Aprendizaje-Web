@@ -1,0 +1,221 @@
+
+/* aqui podemos definir variables globales */
+root{
+  --var: black;
+  --color-fondo: white;
+  --var-color: green;
+}
+
+/* podemos redefinir una variable para que tenga otro valor en otro lado */
+#contenedor-principal{
+  --color-fondo: purple;
+  background-color: var(--color-fondo);
+}
+
+
+/* selectores de tipo */
+h3{
+  color:aquamarine;
+}
+
+/* color hexadecimal
+esto se puede abreviar borrando los pares repetidos
+ff0000 = f00
+ff0f00=f0f0 */
+body{
+  background-color: #34ebd5;
+}
+
+/* tambien podemos usar rgb de esta manera
+si se asigna un cuato valor este sera tomado como transparencia
+rgb(0, 0, 139, 0.4)   0.4 es transparencia*/
+p{
+  color:rgb(0, 0, 139);
+  font-family: 'Comforter', cursive;
+
+}
+
+
+
+h1 {
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p, 
+ul, 
+ol {
+  font-size: 20px;
+}
+
+li{
+  color: blue;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* selectores de clase */
+.lista-de-gatos {
+  color: chocolate;
+}
+
+.bordes-redondeados{
+  border-radius: 50%;/* tambien se pueden usar px */
+  
+}
+
+.imagen-de-gato{
+  width: 600px;
+  border-width: 20px;
+  border-color: cyan;
+  border-style: solid;/* none, dotted, dashed, double, groove, ridge, inset, outset */
+
+  
+}
+
+.imagen-varios-bordes{
+  /* el padding es el espacio entre el contenido del elemento y el borde */
+  /* padding: 15px;  asi se asigna un padding a todas las esquinas*/
+
+
+  /* De esta manera ponemos padding para cada lado
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 20;
+  padding-right: 20; */
+
+  /* asi añadomos padding para cada una de las esquinas en una sola lina primero arriba segundo derecha despues abajo y por ultimo izquieda */
+  padding: 20px 20px 20px 20px;
+
+  /* margin general
+   margin: 15px; */
+
+  /* margin para cada lado
+   margin:-left: 10px;
+  margin:-top: 10px;
+  margin:-bottom: 20;
+  margin:-right: 20;  */
+
+  /* asi añadimos un margin para cada lado en una sola linea */
+  margin: 20px 20px 20px 20px;
+
+  width: 600px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  background-color: yellow;
+}
+
+.contenedor-listas{
+  background-color: silver;
+}
+
+/* En el archivo css la regla que este mas abajo tiene prioridad ya que se ejecuta en cascada y la primera regla sera sobre escrita por la segunda */
+.texto-azul{
+  color: blue;
+}
+
+.texto-morado{
+  color: purple !important;
+}
+
+/* las clases estan por encima de los selectores de tipo por eso si asignamos un estilo a un tipo y despues asignamos a algun objeto
+de ese tipo una clase con otro estilo se vera el estilo estipulado en la clase y no en el selector de tipo 
+
+Ademas de esto hay que tener en cuenta que un estilo asignado por id tendra prioridad sobre un estilo asignado por una clase
+
+EL stilo que se priorisara sera el asignado directamente en linea con el atrubuto style
+
+pero podemos añadir la etiqueta !important para que un estilo por clase id o tipo se priorise sobre todos los demas
+*/
+.sin-subrayado{
+  text-decoration: none;
+}
+
+/* selectores de id */
+#titulo{
+  font-size: 60px;
+  color:crimson;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#div-img{
+  background-color: brown;
+}
+
+
+#titulo{
+  color: black;
+}
+
+
+/* selectores de atributo */
+
+img[alt]{
+  border-radius: 50%;
+}
+
+input[type="radio"]{
+  margin:10px;
+}
+
+/* podriamos no especificar el tipo de elemento
+[type="radio"]{
+  margin:10px;
+} */
+
+[type="checkbox"]{
+  margin: 8px;
+}
+
+a[href="https://www.freecodecamp.org/espanol/"]{
+  color:green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contenedor-principal{
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.rectangulo{
+  padding: 5px;
+  margin: 5px;
+}
+
+.px{
+  background-color: #34ebd5;
+  width: 200px;
+}
+
+.vw{
+  background-color: darkmagenta;
+  width: 20vw;
+}
+
+.em{
+  background-color: green;
+  width: 15em;
+  font-size: 1.5em;
+}
+
+/* VARIABLES */
+
+.variable{
+  --color: purple;
+}
+
+/* asi usamos una variable y el segundo valor es el respaldo por si la variable  falla */
+/* ademas se debe definir primeramente un color sin uso de variables, permitiendo asi que  */
+.uso-variable{
+  color: orange;
+  color: var(--color, orange );
+}

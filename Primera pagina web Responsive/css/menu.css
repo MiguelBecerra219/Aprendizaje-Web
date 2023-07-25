@@ -1,0 +1,46 @@
+#logo-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url("/Media/Logo.png");
+    background-size: cover;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: initial;
+    margin-top: 10px;
+    padding-left: 50%;
+    padding-right: 50%;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    align-items: center;
+}
+
+#menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#menu li a{
+    display: block;
+    padding: 5px;
+}
+
+#menu li a.active{
+    text-decoration: underline;
+    color: var(--color-primario-dark);
+}
+
+@media only screen and (min-width: 768px){
+    #menu{
+        margin-left: 20px;
+        text-align: left;
+        
+    }
+}
+
+

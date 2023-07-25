@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: url(/imagenes/madera.jpg) no-repeat center center /cover;
+}
+
+.contenedor-principal{
+    width: 80vh;
+    max-width: 600px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: black 3px solid;
+}
+
+.contenedor-botones{
+    padding: 20px;
+}
+
+#cronometro{
+    font-weight: bold;
+    width: 100%;
+    font-size: 80px;
+    user-select: none;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.boton{
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#boton-inicio-pausa.iniciar,
+#boton-inicio-pausa.iniciar i{
+    background-color: #08e008;
+}
+
+#boton-inicio-pausa.pausar,
+#boton-inicio-pausa.pausar i{
+    background-color: #ffdc00;
+}
+
+#boton-reiniciar{
+    background-color: red;
+}

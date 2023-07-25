@@ -1,0 +1,13 @@
+Representacion del html para poder manipularlo
+
+Conceptos importantes
+
+Root Node (nodo raiz): es le nodo superior del arbol este contiene a todos los demas
+
+Parent Node (Nodo padre): nodo que contiene a otro nodo en la gerarquita del DOM 
+
+Child Node (Nodo hijo): es el nodo que esta contenido directamente dentro de otro nodo
+
+Descendant Node (Nodo descendiente): nodo contenido dentro de otro nodo en la gerarquia del DOM, ya sea de manera directa o indirecra.
+
+Sibling Nodes (Nodos hermanos): estan ubicados en el mismo nivel de la gerarquia del DOM.

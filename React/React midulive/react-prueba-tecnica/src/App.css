@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #3f3e3e;
+  height: 100vh;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+p {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  margin: 10px;
+}
+
+button {
+  margin: 15px;
+  font-size: 2em;
+  border-radius: 20px;
+  background-color: #544172;
+}

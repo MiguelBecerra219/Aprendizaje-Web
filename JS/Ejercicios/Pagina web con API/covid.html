@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas covid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Estadisticas del covid 19</h1><br>
+
+        <b>Fecha <input type="date" id="inputFecha"></b><br>
+        <select id="selectPais">
+            <opttion value="spain">España</opttion>
+            <opttion value="us">Estados unidos</opttion>
+            <opttion></opttion>
+        </select>
+        <br>
+        <button id="btnCargar">Cargar las estadisticas</button>
+    
+    <br>
+    <ul>
+        <li>date <span id="date"></span></li> 
+        <li>states <span id="states"></span></li> 
+        <li>positive <span id="positive"></span></li> 
+        <li>negative <span id="negative"></span></li> 
+        <li>pending <span id="pending"></span></li> 
+        <li>hospitalizedCurrently <span id="hospitalizedCurrently"></span></li> 
+        <li>hospitalizedCumulative <span id="hospitalizedCumulative"></span></li> 
+        <li>inIcuCurrently <span id="inIcuCurrently"></span></li> 
+        <li>inIcuCumulative <span id="inIcuCumulative"></span></li> 
+        <li>onVentilatorCurrently <span id="onVentilatorCurrently"></span></li> 
+        <li>onVentilatorCumulative <span id="onVentilatorCumulative"></span></li> 
+        <li>dateChecked <span id="dateChecked"></span></li> 
+        <li>death <span id="death"></span></li> 
+        <li>hospitalized <span id="hospitalized"></span></li> 
+        <li>totalTestResults <span id="totalTestResults"></span></li> 
+        <li>lastModified <span id="lastModified"></span></li> 
+        <li>recovered <span id="recovered"></span></li> 
+        <li>total <span id="total"></span></li> 
+        <li>posNeg <span id="posNeg"></span></li> 
+        <li>deathIncrease <span id="deathIncrease"></span></li> 
+        <li>hospitalizedIncrease <span id="hospitalizedIncrease"></span></li> 
+        <li>negativeIncrease <span id="negativeIncrease"></span></li> 
+        <li>positiveIncrease <span id="positiveIncrease"></span></li> 
+        <li>totalTestResultsIncrease <span id="totalTestResultsIncrease"></span></li> 
+    </ul>
+    </div>
+    <script src="scipt.js"></script>
+
+
+</body>
+</html>
